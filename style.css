@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+}
+/* Criei uma conf específica para minha foto de perfil*/
+figure.foto-home img {
+  width: 10%;
+  height: 10%;
+}
+
+/* Criei uma conf de cor pro backgroud, apesar de usar uma imagem por cima, coloquei a posição no centro e o tamanho em 100%*/
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Criei uma configuração de alinhamento para todo o header, alinho no centro, itens no centro, medida para padding, etc*/
+header {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* Configuraçao do cabeçalho, tamanho de font, estilo de display*/
+.cabeçalho-link {
+  display: flex;
+  gap: 3rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.cabeçalho-link a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.cabeçalho-link a:hover {
+  color: #f2c40a;
+  transition: 0.3s all;
+}
+
+/* Conf exclusiva para todos os botões, escolhi a cor, a borda dos botoes, tamanho da fonte, etc*/
+button {
+  color: #f2c40a;
+  background: transparent;
+  border: solid 1px #f2c40a;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 150px;
+}
+
+/* Enfim, tem aqui configurações exclusivas para cada tipo de item, containers, textos, botoes*/
+button:hover {
+  background-color: #f2c40a;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container-text {
+  padding: 150px 0 0 130px;
+}
+
+.text h3 {
+  color: #fff;
+  font-size: 15px;
+}
+
+.text h1 {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.text span {
+  color: #f2c40a;
+}
+
+.text p {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.redes-social {
+  margin-top: 10px;
+}
+
+.redes-social a {
+  color: #f2c40a;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .cabeçalho-link {
+    display: none;
+  }
+}
